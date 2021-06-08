@@ -9,14 +9,7 @@ window.onscroll = function() {myFunction()};
         
       } else {
         navbar.classList.remove("sticky");
-
-        
+       
       }
-      var scroll = $(window).scrollTop();
-      if (scroll > 800) {
-        $("#featured-title").css("display" , "block");
-	  }
-      else{
-        $("#featured-title").css("display" , "none");
-      }
+      
     }

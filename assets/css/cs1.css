@@ -1,49 +1,5 @@
-/* HEader Background */
-:root {
-	--init-x: 0;
-	--init-y: 0;
-	--dest-x: 0;
-	--dest-y: 0;
-	--dest-z: 0;
-}
-#div{
-  font-family: Consolas, Menlo, Monaco, monospace;
-  font-weight: bold;
-	background:url("../img/cs/bla.jpg") no-repeat fixed ;
-    background-size: cover;
-	height: 800px;
-    
-	overflow: hidden;
-    
-}
-.lingo {
-	position: absolute;
-	color: white;
-	transform: translateZ(0);
-	-webkit-animation: flythrough 5s forwards ease-in;
-    animation: flythrough 5s forwards ease-in;
-  transform-origin: center;
-}
 
-#thisSelect {
-	position: absolute;
-	height: 25px;
-	z-index: 0;
-}
-
-@-webkit-keyframes flythrough {
-	0% {opacity: 0; transform: perspective(0px) translate3d(var(--init-x),var(--init-y),0px);}
-	50% {opacity: 0.5;}
-	100% {opacity: 0; transform: perspective(500px) translate3d(var(--dest-x),var(--dest-y), var(--dest-z));}
-}
-
-
-::-webkit-scrollbar ,#thisSelect{
-    
-    display: none;
-  }
  /*Sticky navigation bar  */
-
 
 .sticky {
     position: fixed;
@@ -59,6 +15,7 @@
     font-family: "Montserrat", sans-serif;
       color: #8d97ad;
     font-weight: 300;
+    
   }
   
   .blog-home5 h1, .blog-home5 h2, .blog-home5 h3, .blog-home5 h4, .blog-home5 h5, .blog-home5 h6 {
@@ -105,7 +62,7 @@
   }
   .card-img
   {
-      height: 400px;
+      height: 500px;
   }
   .blog-home5 .b-h-box:hover .card-img-overlay {
     height: 100%;
@@ -131,7 +88,7 @@
       background: linear-gradient(to right, #ff4d7e 0%, #ff6a5b 100%);
       transition: all 0.5s ease-in-out;
   }
-  
+
   .blog-home5 .font-14 {
       font-size: 14px;
   }
@@ -154,3 +111,93 @@
   {
       padding-top: 100px;
   }
+
+
+  /* mobile devices */
+  @media only screen and (max-width: 768px) 
+  {
+     
+  }
+	
+
+.loader {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url('../img/cs/preloader.gif') 50% 50% no-repeat rgb(17, 16, 16);
+}
+
+
+
+/* Launching Page */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600,300);
+
+.hero {
+	height: 80vh;
+	background: linear-gradient(45deg, rgba(255,175,189,.7), rgba(100,216,243,.7), rgba(234,236,198,.7), rgba(245,146,176,.7), rgba(52,219,216,.7)) 0 0 / 1000% no-repeat, url('../img/cs/head.jpg') 0 0 / cover no-repeat;
+	-webkit-animation: gradientAnimation 40s ease infinite;
+	animation: gradientAnimation 40s ease infinite;
+    
+}
+@-webkit-keyframes gradientAnimation {
+	0%   { background-position: 0% 30%, 0 0;}
+	50%  { background-position: 100% 70%, 0 0;}
+	100% { background-position: 0% 30%, 0 0;}
+}
+@keyframes gradientAnimation {
+	0%   { background-position: 0% 30%, 0 0;}
+	50%  { background-position: 100% 70%, 0 0;}
+	100% { background-position: 0% 30%, 0 0;}
+}
+.hero p {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	color: #333;
+    /* text-shadow: 2px 2px  rgb(0,102,161); */
+	font : normal 600 60px/1 'Open Sans', sans-serif;
+	text-align: center;
+	white-space: nowrap;
+    z-index: 3;
+    text-shadow:
+    /* White glow */
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    /* Green glow */
+    0 0 42px rgb(10, 141, 228),
+    0 0 82px rgb(10, 141, 228),
+    0 0 92px rgb(10, 141, 228),
+    0 0 102px rgb(10, 141, 228),
+    0 0 151px rgb(10, 141, 228);
+
+
+}
+.hero p span {
+	display: block;
+	margin-top: 1em;
+	font-size: 30px;
+	font-weight: 300;
+}
+
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 15s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}

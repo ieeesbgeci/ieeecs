@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US" class="no-js">
 
 <head>
     <meta charset="utf-8">
@@ -28,7 +28,30 @@
 
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/fad9328fa6.js" crossorigin="anonymous"></script>
-    
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>   
+    <style>
+		/* This only works with JavaScript, 
+		   if it's not present, don't show loader */
+		.no-js #loader { display: none;  }
+		.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+	</style>
+	
+	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+	
+	
+	
+	<script>
+		jQuery(document).ready(function ($) {
+    $(window).load(function () {
+        setTimeout(function(){
+            $('.loader').fadeOut('slow', function () {
+            });
+        },3000); // set the time here
+    });  
+});
+	</script>	
 
     <!--[if lt IE 9]>
         <script src="javascript/html5shiv.js"></script>
@@ -38,7 +61,10 @@
 </head>
 
 <body class="header-fixed page no-sidebar header-style-2 topbar-style-2 menu-has-search">
-    
+    <!-- preload icon -->
+    <div class="loader"></div>
+  
+
     <div id="wrapper" class="animsition">
     <div id="page" class="clearfix">
         <!-- Header Wrap -->
@@ -78,18 +104,15 @@
                 </div>
             </div><!-- /#top-bar -->
 
-        <!-- Featured Title -->
-        <div  class="featured-title clearfix" id="div">
-            <div id="featured-title-inner" class="container clearfix">
-                <div class="featured-title-inner-wrap" >                    
-                    <select id="thisSelect" onchange="changeWords()">
-                        <option value="0" selected>Words</option>
-                        <option value="1" >Binary</option>
-                    <select>                      
-                </div>
-            </div><!-- /#featured-title-inner -->                       
-        </div><!-- End Featured Title -->
-
+        <!-- Hero landing -->
+        <div class="hero ">
+                <p class="fade-in" >IEEE COMPUTER SOCIETY 
+                    <span>SBC IDUKKI</span>
+                </p>
+            </div>
+            
+        </div>
+        
         <!-- Navbar Sticky -->
         <div id="featured-title" class="featured-title clearfix">
             <div id="featured-title-inner" class="container clearfix">
@@ -124,7 +147,7 @@
 
                             <div class="themesflat-content-box clearfix" data-margin="0 18px 0 0" data-mobilemargin="0 0 0 0">
                                 <div class="top-pad">
-                                    
+
                                 </div>
                                 <div class="themesflat-headings style-1 clearfix">
                                     <h2 class="heading"><span class="sspan">O</span>verview</h2>
@@ -150,8 +173,7 @@
                                 <div class="post-content post-excerpt margin-bottom-43">
                                     <p class="line-height-27 letter-spacing-005">IEEE Computer Society is the leading provider of technical information, community services and personalized services to the world's computing and computer science professionals. IEEE Computer Society strives to be essential to the global technical community and computer professionals everywhere and be universally recognized for the contributions of technical professionals in researching, developing, and applying technology to improve global conditions.</p>
                                 </div>
-
-
+                             
 
                                <!-- ICONBOX -->
                                 <div class="row-iconbox">
@@ -276,7 +298,30 @@
                                 </div><!-- /.container -->
                                 </div>
                                 <!-- END ICONBOX -->
-
+                                     <!-- ABOUT -->
+                              <div class="row-about">
+                                <div class="container-fluid">
+                                    <div class="row equalize sm-equalize-auto">
+                                        <div class="col-md-6 half-background style-1">
+                                            
+                                        </div><!-- /.col-md-6 -->
+                                        <div class="col-md-6 bg-light-grey">
+                                            <div class="themesflat-spacer clearfix" data-desktop="64" data-mobile="60" data-smobile="60"></div>
+                                            <div class="themesflat-content-box clearfix" data-margin="0 25% 0 4.5%" data-mobilemargin="0 0 0 4.5%">
+                                                <div class="themesflat-headings style-1 clearfix">
+                                                    <h2 class="heading">About IEEE  CS SB GECI</h2>
+                                                    <div class="sep has-width w80 accent-bg margin-top-11 clearfix"></div>                                               
+                                                    <p class="sub-heading margin-top-30">IEEE Student Branch Government Engineering College Idukki, active since the first of December 2019, has opened a world of opportunities, to each and everyone who aspires to learn and evolve. Our main motive is to help students grow in a way that helps the entire community to develop alongside. The team spirit and cooperation that was shown towards us to date by our members, is responsible for the numerous milestones we have achieved so far.</p>
+                                                </div>
+                                                <div class="themesflat-spacer clearfix" data-desktop="26" data-mobile="35" data-smobile="35"></div>
+                                                
+                                            </div><!-- /.themesflat-content-box --> 
+                                            <div  id="whyieee" class="themesflat-spacer clearfix" data-desktop="75" data-mobile="60" data-smobile="60"></div>
+                                        </div><!-- /.col-md-6 -->
+                                    </div><!-- /.row -->
+                                </div><!-- /.container-fluid -->
+                            </div>
+                            <!-- END ABOUT --> 
                                 <!--UPCOMING EVNTS-->
                                 <div class="blog-home5 py-5">
                                     <div class="container">
@@ -355,7 +400,7 @@
                                     </div>
                                   </div>
 
-                            
+                              
 
 
 
@@ -511,7 +556,7 @@
 
 <a id="scroll-top"></a>
 <!-- header Script -->
-<script src="assets/js/header.js" type="text/javascript"></script>
+
 <!-- Sticky navbar -->
 <script src="assets/js/scroll.js" type="text/javascript"></script>
 
