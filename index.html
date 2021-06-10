@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US" class="no-js">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US" class="js" >
 
 <head>
     <meta charset="utf-8">
@@ -20,7 +20,8 @@
     <link rel="stylesheet" type="text/css" href="assets/css/cs1.css">
 
     <!-- Colors -->
-    <link rel="stylesheet" type="text/css" href="assets/css/colors/color1.css" id="colors">
+    
+    <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet"/>
 
     <!-- Favicon and Touch Icons  -->
     <link rel="shortcut icon" href="assets/icon/favi.png">
@@ -29,42 +30,14 @@
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/fad9328fa6.js" crossorigin="anonymous"></script>
     <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>   
-    <style>
-		/* This only works with JavaScript, 
-		   if it's not present, don't show loader */
-		.no-js #loader { display: none;  }
-		.js #loader { display: block; position: absolute; left: 100px; top: 0; }
-	</style>
-	
-	
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-	
-	
-	
-	<script>
-		jQuery(document).ready(function ($) {
-    $(window).load(function () {
-        setTimeout(function(){
-            $('.loader').fadeOut('slow', function () {
-            });
-        },3000); // set the time here
-    });  
-});
-	</script>	
-
-    <!--[if lt IE 9]>
-        <script src="javascript/html5shiv.js"></script>
-        <script src="javascript/respond.min.js"></script>
-    <![endif]-->
+   
 
 </head>
 
 <body class="header-fixed page no-sidebar header-style-2 topbar-style-2 menu-has-search">
-    <!-- preload icon -->
+    <!-- preload icon 
     <div class="loader"></div>
-  
-
+  -->
     <div id="wrapper" class="animsition">
     <div id="page" class="clearfix">
         <!-- Header Wrap -->
@@ -105,13 +78,24 @@
             </div><!-- /#top-bar -->
 
         <!-- Hero landing -->
-        <div class="hero ">
-                <p class="fade-in" >IEEE COMPUTER SOCIETY 
-                    <span>SBC IDUKKI</span>
-                </p>
-            </div>
+        <main>
+            <section id="welcome-section" >
+                <div >
+                    <img src="assets/img/cs/IEEE-CS_LogoTM-orange.png" style="width: 25%;  display: block; margin-left: auto; margin-right: auto; ">
+                </div>
+              <h1 class="welcome-sec-title" id="hero">IEEE CS  SBC GECI</h1>
+              <div class="fade-in-text">
+                <p >IEEE Computer Siciety Student Branch Chapter<br>Government Engineering College Idukki</p>
+              </div>
+                           
+              <!-- <a class="skip-button" href="#projects"> 
+                fade-in-text
+              </a>
+              -->
+            </section>
             
-        </div>
+          
+          </main>
         
         <!-- Navbar Sticky -->
         <div id="featured-title" class="featured-title clearfix">
@@ -149,7 +133,7 @@
                                 <div class="top-pad">
 
                                 </div>
-                                <div class="themesflat-headings style-1 clearfix">
+                                <div class="themesflat-headings style-1 clearfix fade-in" >
                                     <h2 class="heading"><span class="sspan">O</span>verview</h2>
                                     <div class="sep has-width w80 accent-bg margin-top-11 clearfix"></div>                                          
                                 </div>
@@ -181,7 +165,7 @@
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div class="themesflat-spacer clearfix" data-desktop="60" data-mobile="60" data-smobile="60"></div>
-                                            <div class="themesflat-headings style-1 text-center clearfix">
+                                            <div class="themesflat-headings style-1 text-center clearfix fade-in">
                                                 <h2 class="heading"><span class="sspan">W</span>hy <span class="sspan">C</span>omputer <span class="sspan">S</span>ociety?</h2>
                                                 <p class="sub-heading">A few of the many advantages of joining IEEE Computer Society</p>
                                             </div>
@@ -298,13 +282,59 @@
                                 </div><!-- /.container -->
                                 </div>
                                 <!-- END ICONBOX -->
-                                     <!-- ABOUT -->
+
+                                <!-- ======= Screenshots Section ======= -->
+
+
+                                
+    
+                                   <!-- ICONBOX -->
+                                    <div class="row-iconbox">
+                                      <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="themesflat-spacer clearfix" data-desktop="60" data-mobile="60" data-smobile="60"></div>
+                                                <div class="themesflat-headings style-1 text-center clearfix fade-in">
+                                                    <h2 class="heading"><span class="sspan">E</span>xecom</h2>
+                                                    
+                                                </div>    
+                                                
+                                                     <div class="owl-carousel owl-theme">
+                                                    <div><img src="assets/img/cs/exe/sunil.jpg" alt="img" /></div>
+                                                    <div><img src="assets/img/cs/exe/archa.jpg" alt="img" /></div>
+                                                    <div><img src="assets/img/cs/exe/janajith.jpg" alt="img" /></div>
+                                                    <div><img src="assets/img/cs/exe/anjali.jpg" alt="img" /></div>
+                                                    <div><img src="assets/img/cs/exe/sanjay.jpg" alt="img" /></div>
+                                                    <div><img src="assets/img/cs/exe/niranjana.jpg" alt="img" /></div>
+                  
+                                                    </div>
+                                            
+                                                <div class="container1">
+                                                    <div class="center1">
+                                                      <a href="ExeCom/2021.html"><button >View all</button></a>
+                                                    </div>
+                                                </div>>
+                                                <div  id="societies" class="themesflat-spacer clearfix" data-desktop="50" data-mobile="35" data-smobile="35"></div>
+                                            </div><!-- /.col-md-12 -->
+                                        </div><!--/.row -->
+                                      </div><!-- /.container -->
+                                    </div>
+                                
+ 
+     
+    
+  
+
+
+
+
+                                     <!--  ABOUT 
                               <div class="row-about">
-                                <div class="container-fluid">
+                                <div class="container">
                                     <div class="row equalize sm-equalize-auto">
                                         <div class="col-md-6 half-background style-1">
                                             
-                                        </div><!-- /.col-md-6 -->
+                                        </div>
                                         <div class="col-md-6 bg-light-grey">
                                             <div class="themesflat-spacer clearfix" data-desktop="64" data-mobile="60" data-smobile="60"></div>
                                             <div class="themesflat-content-box clearfix" data-margin="0 25% 0 4.5%" data-mobilemargin="0 0 0 4.5%">
@@ -315,88 +345,140 @@
                                                 </div>
                                                 <div class="themesflat-spacer clearfix" data-desktop="26" data-mobile="35" data-smobile="35"></div>
                                                 
-                                            </div><!-- /.themesflat-content-box --> 
+                                            </div>
                                             <div  id="whyieee" class="themesflat-spacer clearfix" data-desktop="75" data-mobile="60" data-smobile="60"></div>
-                                        </div><!-- /.col-md-6 -->
-                                    </div><!-- /.row -->
-                                </div><!-- /.container-fluid -->
-                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
                             <!-- END ABOUT --> 
+
+
                                 <!--UPCOMING EVNTS-->
+
+
+
+
+
                                 <div class="blog-home5 py-5">
                                     <div class="container">
                                       <!-- Row  -->
                                       <div class="row justify-content-center">
                                         <!-- Column -->
-                                        <div class="themesflat-headings style-1 text-center clearfix">
+                                        <div class="themesflat-headings style-1 text-center clearfix fade-in">
                                             <h2 class="heading"><span class="sspan">U</span>pcoming <span class="sspan">E</span>vents</h2>
                                             <p class="sub-heading">Come join us in these exciting events!</p>
                                         </div>
                                         <!-- Column -->
                                       </div>
                                       <!-- Row  -->
-                                      <div class="row mt-4">
-                                        <!-- Column -->
-                                        <div class="col-md-4">
-                                          <div class="card b-h-box position-relative font-14 border-0 mb-4">
-                                            <img class="card-img" src="assets/img/cs/events/inaugration.jpg" alt="Card image">
-                                            <div class="card-img-overlay overflow-hidden">
-                                                          <div class="d-flex align-items-center">
-                                                                  <span class="bg-info badge overflow-hidden text-white px-3 py-1 font-weight-normal">12 June 2021</span>
-                                                                  
-                                                          </div>
-                                              <h5 class="card-title my-3 font-weight-normal">IEEE CS SBC Inaugural Ceremony</h5>
-                                              <p class="card-text">
-                                                <div>
-                                                    <button class="themesflat-button bg-accent">Read More</button>
-                                                </div>
-                                              </p>
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <!-- Column -->
-                                        <!-- Column -->
-                                        <div class="col-md-4">
-                                            <div class="card b-h-box position-relative font-14 border-0 mb-4">
-                                              <img class="card-img" src="assets/img/cs/events/coming.png" alt="Card image">
-                                              <div class="card-img-overlay overflow-hidden">
-                                                            <div class="d-flex align-items-center">
-                                                                    <span class="bg-info badge overflow-hidden text-white px-3 py-1 font-weight-normal">19 June 2021</span>
-                                                                    
-                                                            </div>
-                                                <h5 class="card-title my-3 font-weight-normal">Membership Development Session</h5>
-                                                <p class="card-text">
-                                                    
-                                                  <div>
-                                                    <button class="themesflat-button bg-accent">Read More</button>
+                                     
+                                      <div class="container mt-4 mb-5">
+                                      
+                                      <div class="col-md-12">
+                                          <div class="row bg-white rounded mt-3">
+                                              <div class="col-md-1">
+                                                  <h2>June<br><strong class="sspan">12</strong></h2>
+                                              </div>
+                                              <div class="col-md-4 no-padding">
+                                                  <img class="img-fluid" src="assets/img/cs/events/inaugration.jpg  ">
+                                              </div>
+                                              <div class="col-md-7 py-3">
+                                                  <div class="card-block px-3">
+                                                      <h4 class="card-title mt-0 "><strong class="sspan">Inaugration Ceremony</strong></h4>
+                                                      <p class="text-secondary mb-0">
+                                                        <i class="fas fa-video"></i>
+                                                          <strong>Google Meet</strong>
+                                                      </p>
+                                                      <p class="text-secondary ">
+                                                        <i class="far fa-clock"></i>
+                                                          <strong>10:00 AM</strong>
+                                                      </p>
+                                                      <p class="card-text">
+                                                        IEEE SB GECI is excited to announce the inauguration of "COMPUTER SOCIETY" on 12th June 2021.
+                                                      </p>
+                                                      <hr>
+                                                      <a href="#" class="text-secondary">
+                                                          <button>
+                                                              Read More
+                                                              <i class="icon ion-android-arrow-forward"></i>
+                                                            </button>
+                                                       </a>
                                                   </div>
-                                                </p>
                                               </div>
-                                            </div>
                                           </div>
-                                          <!-- Column -->
-                                          <!-- Column -->
-                                        <div class="col-md-4">
-                                            <div class="card b-h-box position-relative font-14 border-0 mb-4">
-                                              <img class="card-img" src="assets/img/cs/xtreme.jpg" alt="Card image">
-                                              <div class="card-img-overlay overflow-hidden">
-                                                            <div class="d-flex align-items-center">
-                                                                    <span class="bg-info badge overflow-hidden text-white px-3 py-1 font-weight-normal">03 July 2021</span>
-                                                                    
-                                                            </div>
-                                                <h5 class="card-title my-3 font-weight-normal">IEEE Xtreme Orientation</h5>
-                                                <p class="card-text">
-                                                    IEEEXtreme is a global challenge in which teams of IEEE Student members – advised and proctored by an IEEE member
-                                                    <div>
-                                                        <button class="themesflat-button bg-accent">Read More</button>
-                                                    </div>
-                                                </p>
-                                              </div>
+                                          <div class="row bg-white rounded mt-3">
+                                            <div class="col-md-1">
+                                                <h2>June<br><strong class="sspan">12</strong></h2>
                                             </div>
-                                          </div>
-                                          <!-- Column -->
-                                       
+                                            <div class="col-md-4 no-padding">
+                                                <img class="img-fluid" src="assets/img/cs/events/journey.jpeg  ">
+                                            </div>
+                                            <div class="col-md-7 py-3">
+                                                <div class="card-block px-3">
+                                                    <h4 class="card-title mt-0 "><strong class="sspan">TAlk SESSION</strong></h4>
+                                                    <p class="text-secondary mb-0">
+                                                      <i class="fas fa-video"></i>
+                                                        <strong>Google Meet</strong>
+                                                    </p>
+                                                    <p class="text-secondary ">
+                                                      <i class="far fa-clock"></i>
+                                                        <strong>10:00 AM</strong>
+                                                    </p>
+                                                    <p class="card-text">
+                                                      IEEE SB GECI is excited to announce the inauguration of "COMPUTER SOCIETY" on 12th June 2021.
+                                                    </p>
+                                                    <hr>
+                                                    <a href="#" class="text-secondary">
+                                                        <button>
+                                                            Read More
+                                                            <i class="icon ion-android-arrow-forward"></i>
+                                                          </button>
+                                                     </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row bg-white rounded mt-3">
+                                            <div class="col-md-1">
+                                                <h2>June<br><strong class="sspan">19</strong></h2>
+                                            </div>
+                                            <div class="col-md-4 no-padding">
+                                                <img class="img-fluid" src="assets/img/cs/events/xtreme.jpg ">
+                                            </div>
+                                            <div class="col-md-7 py-3">
+                                                <div class="card-block px-3">
+                                                    <h4 class="card-title mt-0 "><strong class="sspan">IEEE Xtreme 15.0  Orientation</strong></h4>
+                                                    <p class="text-secondary mb-0">
+                                                      <i class="fas fa-video"></i>
+                                                        <strong>Google Meet</strong>
+                                                    </p>
+                                                    <p class="text-secondary ">
+                                                      <i class="far fa-clock"></i>
+                                                        <strong>10:00 AM</strong>
+                                                    </p>
+                                                    <p class="card-text">
+                                                      IEEE SB GECI is excited to announce the inauguration of "COMPUTER SOCIETY" on 12th June 2021.
+                                                    </p>
+                                                    <hr>
+                                                    <a href="#" class="text-secondary">
+                                                        <button>
+                                                            Read More
+                                                            <i class="icon ion-android-arrow-forward"></i>
+                                                          </button>
+                                                     </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                          
                                       </div>
+                                        </div>
+                                      </div>
+
+
+
+
+                                       
+                                      
                                     </div>
                                   </div>
 
@@ -542,7 +624,7 @@
             <div id="bottom-bar-inner" class="container">
                 <div class="bottom-bar-inner-wrap">
                     <div class="bottom-bar-content">
-                        <div id="copyright"><span class="text">Made with ❤️ by  <a href="https://linkedin.com/in/aakarshb/" target="_blank" class="text-white">Aakarsh B</a></span> 
+                        <div id="copyright"><span class="text">Made with ❤️ by  <a href="https://linkedin.com/in/aakarshb/" target="_blank" class="text-white"> WEB DESIGN TEAM</a></span> 
                         </div>
                     </div><!-- /.bottom-bar-content -->
 
@@ -556,6 +638,16 @@
 
 <a id="scroll-top"></a>
 <!-- header Script -->
+
+
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/modal-video/js/modal-video.min.js"></script>
+    <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="assets/vendor/superfish/superfish.min.js"></script>  
+    <!-- Template Main JS File -->
+    <script src="assets/js/main2.js"></script>
+
+
 
 <!-- Sticky navbar -->
 <script src="assets/js/scroll.js" type="text/javascript"></script>

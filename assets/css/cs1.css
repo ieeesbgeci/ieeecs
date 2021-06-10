@@ -1,4 +1,4 @@
-
+@import url("https://fonts.google.com/icons?selected=Material%20Icons%20Outlined%3Aschedule");
  /*Sticky navigation bar  */
 
 .sticky {
@@ -103,6 +103,7 @@
   {
       color:#0066a1
   }
+ 
   .card-text
   {
       color:#263238;
@@ -114,90 +115,85 @@
 
 
   /* mobile devices */
-  @media only screen and (max-width: 768px) 
-  {
-     
+  @media screen and (max-width: 600px) {
+    
+    .welcome-sec-title 
+    {
+      font-size:30px !important;
+    }
+    .fade-in-text 
+    {
+      font-size: 12px;
+    }
   }
-	
-
-.loader {
-	position: fixed;
-	left: 0px;
-	top: 0px;
-	width: 100%;
-	height: 100%;
-	z-index: 9999;
-	background: url('../img/cs/preloader.gif') 50% 50% no-repeat rgb(17, 16, 16);
-}
+ 
 
 
 
 /* Launching Page */
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:600,300);
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Righteous&family=Montserrat&display=swap');
 
-.hero {
-	height: 80vh;
-	background: linear-gradient(45deg, rgba(255,175,189,.7), rgba(100,216,243,.7), rgba(234,236,198,.7), rgba(245,146,176,.7), rgba(52,219,216,.7)) 0 0 / 1000% no-repeat, url('../img/cs/head.jpg') 0 0 / cover no-repeat;
-	-webkit-animation: gradientAnimation 40s ease infinite;
-	animation: gradientAnimation 40s ease infinite;
+
+#header {
+  background-color: #766bf5;
+  background: linear-gradient(135deg, #7257fa, #4cfd83);
+  position: fixed;
+  width: -webkit-fill-available !important;
+  width: 100%;
+  min-height: 50px;
+  z-index: 69;
+}
+#welcome-section {
+  background-color: #232323;
+  background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
+  height: 100vh !important;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
     
+
+  
 }
-@-webkit-keyframes gradientAnimation {
-	0%   { background-position: 0% 30%, 0 0;}
-	50%  { background-position: 100% 70%, 0 0;}
-	100% { background-position: 0% 30%, 0 0;}
+
+.welcome-sec-title 
+{
+  
+  color: #766bf5;
+  background: linear-gradient(135deg, #7257fa, #4cfd83);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 60px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ 
 }
-@keyframes gradientAnimation {
-	0%   { background-position: 0% 30%, 0 0;}
-	50%  { background-position: 100% 70%, 0 0;}
-	100% { background-position: 0% 30%, 0 0;}
-}
-.hero p {
-	position: relative;
-	top: 50%;
-	left: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-	color: #333;
-    /* text-shadow: 2px 2px  rgb(0,102,161); */
-	font : normal 600 60px/1 'Open Sans', sans-serif;
-	text-align: center;
-	white-space: nowrap;
-    z-index: 3;
-    text-shadow:
-    /* White glow */
-    0 0 7px #fff,
-    0 0 10px #fff,
-    0 0 21px #fff,
-    /* Green glow */
-    0 0 42px rgb(10, 141, 228),
-    0 0 82px rgb(10, 141, 228),
-    0 0 92px rgb(10, 141, 228),
-    0 0 102px rgb(10, 141, 228),
-    0 0 151px rgb(10, 141, 228);
 
 
+
+
+
+/* Execom circle */
+.container1 {
+  height: 150px;
+  position: relative;
+
 }
-.hero p span {
-	display: block;
-	margin-top: 1em;
-	font-size: 30px;
-	font-weight: 300;
+
+.center1 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
+
+/* fade sllow */
 
 .fade-in {
-	opacity: 1;
-	animation-name: fadeInOpacity;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
-	animation-duration: 15s;
-}
-
-@keyframes fadeInOpacity {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
+  opacity: 0;
 }
