@@ -197,3 +197,13 @@
 .fade-in {
   opacity: 0;
 }
+
+#ieee_id
+{
+  
+  border-radius: 5px;
+  background-color: #fff;
+  color:#000;
+
+
+}
