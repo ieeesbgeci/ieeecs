@@ -1,4 +1,6 @@
 @import url("https://fonts.google.com/icons?selected=Material%20Icons%20Outlined%3Aschedule");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
  /*Sticky navigation bar  */
 
 .sticky {
@@ -206,4 +208,16 @@
   color:#000;
 
 
+}
+
+.user_details
+{
+  display: block;
+  padding:10px;
+  background-color: #e0e3e9;
+  margin: 10px 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+  border-radius: 10px;
 }
