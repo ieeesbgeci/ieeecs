@@ -1,6 +1,6 @@
 @import url("https://fonts.google.com/icons?selected=Material%20Icons%20Outlined%3Aschedule");
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
  /*Sticky navigation bar  */
 
 .sticky {
@@ -146,13 +146,17 @@
   z-index: 69;
 }
 #welcome-section {
-  background-color: #232323;
-  background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
+  
+  background-image: url("../../assets/img/landing/ieee2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
   height: 100vh !important;
   color: #fff;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
     
 
@@ -163,9 +167,11 @@
 {
   
   color: #766bf5;
-  background: linear-gradient(135deg, #7257fa, #4cfd83);
+  /* background: linear-gradient(135deg, #7257fa, #4cfd83); */
+  background-color: #fff;
   -webkit-background-clip: text;
   background-clip: text;
+  font-family: 'Work Sans', sans-serif;
   -webkit-text-fill-color: transparent;
   font-size: 60px;
   display: block;
@@ -173,6 +179,13 @@
   margin-right: auto;
  
 }
+.bluelogo
+{
+  width:25vh;
+  
+  
+}
+.b{border:1px solid red;}
 
 
 
