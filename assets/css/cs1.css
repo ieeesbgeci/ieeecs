@@ -234,3 +234,27 @@
   font-size: 17px;
   border-radius: 10px;
 }
+/* kajas */
+.execomCard{
+  width:240px;
+  text-align: center;
+  margin: 80px 40px;
+}
+.card-img-cont{
+  height: 160px;
+  width:160px;
+  overflow: hidden;
+  border-radius: 50%;
+  border:double 4px transparent;
+  background: linear-gradient(white,white),radial-gradient(circle at top left, #0896a8,#128bcd);
+  background-origin: border-box;
+  background-clip: padding-box,border-box;
+  margin:10px auto;
+}
+.execomCard-text-cont div:nth-child(1){
+  font-size: 1.3em;
+  font-weight: bold;
+}
+.execomCard-text-cont div:nth-child(2){
+  color: #0896a8;
+}
